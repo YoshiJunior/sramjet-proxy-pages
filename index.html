@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Proxy</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="shell">
+    <h1>Web Proxy</h1>
+    <p class="sub">Scramjet-powered browser frontend</p>
+
+    <form id="go">
+      <input id="url" type="text" inputmode="url"
+             placeholder="Enter a URL, e.g. https://example.com"
+             autocomplete="off">
+      <button type="submit">Go</button>
+    </form>
+
+    <p id="status" class="status"></p>
+
+    <section class="card">
+      <h2>Setup required</h2>
+      <p>
+        This GitHub Pages frontend needs a compatible Wisp/transport server.
+        Put its WebSocket URL in <code>config.js</code>.
+      </p>
+    </section>
+  </main>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
